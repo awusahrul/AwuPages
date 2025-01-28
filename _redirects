@@ -1,3 +1,6 @@
 /link/:slug  https://gosite.awu.my.id/:slug  301
 /_pay/:slug  https://gosite.awu.my.id/:slug  301
 /pay/:slug  https://gosite.awu.my.id/:slug  301
+/2:slug  https://www.awu.my.id/2:slug  301
+/p/:slug  https://www.awu.my.id/p/:slug  301
+/search:slug  https://www.awu.my.id/search:slug  301

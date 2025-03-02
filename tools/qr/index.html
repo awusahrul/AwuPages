@@ -49,10 +49,10 @@
     <script>
        let encrypted = document.getElementById('@awu.my.id').textContent;
         let plaintext = '';
-        const key = 331;
+        const key = 123;
 
         for(let i = 0; i < encrypted.length; i += 3) {
-            const encryptedCharCode = parseInt(encrypted.substring(i, i + 3));
+          const encryptedCharCode = parseInt(encrypted.substring(i, i + 3));
             const charCode = (encryptedCharCode - key + 256) % 256;
             plaintext += String.fromCharCode(charCode);
         }
